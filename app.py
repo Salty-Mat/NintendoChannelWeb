@@ -29,7 +29,8 @@ db.configure_mappers()
 
 if __name__ == "__main__":
     WSGIRequestHandler.protocol_version = "HTTP/1.1"
-    context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
+    context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
     context.set_ciphers("ALL:@SECLEVEL=0")
     context.load_cert_chain("server.pem", "server.key")
-    app.run(host="::", port=443, ssl_context=context, debug=config.debug)
+    # app.run(host="::", port=443, ssl_context=context, debug=config.debug)
+    app.run(host="0.0.0.0", port=443, debug=config.debug)
