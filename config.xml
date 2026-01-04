@@ -1,0 +1,12 @@
+<Config>
+    <!-- Credentials -->
+    <username>mat</username>
+    <password>mathewmeep</password>
+
+    <!-- Database information -->
+    <databaseAddress>10.0.1.34</databaseAddress>
+    <databaseName>nintendo_channel</databaseName>
+
+    <!-- Assets -->
+    <assetsPath>assets</assetsPath>
+</Config>

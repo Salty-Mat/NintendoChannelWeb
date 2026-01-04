@@ -118,7 +118,7 @@
                                     class="h-14 object-contain rounded border border-gray-600" />
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm">
-                                <div class="flex space-x-2">
+                                <div class="group flex space-x-2">
                                     <div id="status" class="text-sm text-gray-400 sm:mr-2"></div>
                                     <a href="{{ url_for('thegateway.edit_video', movie_id=video.id) }}"
                                             class="inline-flex items-center px-3 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition duration-200 text-xs">
@@ -126,7 +126,7 @@
                                             <span>Edit</span>
                                     </a>
                                     <a href="/thegateway/videos"
-                                        class="inline-flex items-center px-3 py-1 rounded-md bg-red-700/30 text-red-300 hover:bg-red-600/50 hover:text-white transition-colors duration-200">
+                                        class="group opacity-50 cursor-not-allowed inline-flex items-center px-3 py-1 rounded-md bg-red-700/30 text-red-300 hover:bg-red-600/50 hover:text-white transition-colors duration-200">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1.5" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -134,6 +134,9 @@
                                         </svg>
                                         Delete
                                     </a>
+                                    <div className="text-opacity-0 text-slate-500 to-blue-300">
+                                        blep
+                                    </div>
                                 </div>
                             </td>
                         </tr>
